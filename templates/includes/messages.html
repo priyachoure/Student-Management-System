@@ -1,0 +1,46 @@
+<!--                    message display-->
+                    {% if messages %}
+                    {% for message in messages %}
+                    {% if messages.tag == 'error' %}
+                    <div class="alert alert-danger alert-dismmissable fade show" role="alert">
+                        {{messages}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if messages %}
+                    {% for message in messages %}
+                    {% if messages.tag == 'success' %}
+                    <div class="alert alert-success alert-dismmissable fade show" role="alert">
+                        {{messages}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                    <!--                    end dispalay-->
+
+                    {% if messages %}
+                    {% for message in messages %}
+                    {% if messages.tag == 'warning' %}
+                    <div class="alert alert-warning alert-dismmissable fade show" role="alert">
+                        {{messages}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                    <!--                    end dispalay-->
